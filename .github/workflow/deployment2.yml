@@ -1,4 +1,4 @@
-name: Deployment excersise
+name: Deployment excersise 2
 on: push
 jobs:
   lint:
@@ -9,6 +9,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Lint
+        run: npm run lint
   test:
     runs-on: ubuntu-latest
     steps:
